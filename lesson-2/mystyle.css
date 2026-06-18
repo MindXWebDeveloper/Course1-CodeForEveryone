@@ -1,0 +1,129 @@
+@charset "UTF-8";
+body {
+  background-image: url("background_vector.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  display: grid;
+  grid-template-columns: 45% 55%;
+  grid-template-rows: 20% 80%;
+  grid-template-areas: "header header" "aside main";
+  padding: 5%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  grid-area: header;
+}
+
+aside {
+  grid-area: aside;
+}
+
+main {
+  grid-area: main;
+}
+
+h2 span {
+  content: "";
+  display: inline-block;
+  width: 0.5%;
+  height: 100%;
+  align-self: stretch;
+  background-color: white;
+  flex-shrink: 0;
+  position: absolute;
+  left: 1%;
+}
+
+h2 {
+  background-color: #2d7a68;
+  color: white;
+  padding: 0px 10px;
+  display: inline-block;
+  max-width: 1000px;
+  width: 400px;
+  border-radius: 0 999px 999px 0;
+  text-transform: uppercase;
+  position: relative;
+}
+
+aside.cv__sidebar section.contact ul {
+  list-style: none;
+}
+
+aside.cv__sidebar section.contact ul li#email::before {
+  content: "✉";
+  margin-right: 8px;
+  margin-left: 4px;
+}
+
+aside.cv__sidebar section.contact ul li#facebook::before {
+  content: "";
+  background-image: url("facebook_icon.webp");
+  display: inline-block;
+  margin-right: 2px;
+  width: 25px;
+  height: 25px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 5px;
+}
+
+span.dot_green {
+  width: 20px;
+  height: 20px;
+  background: #2d7a68;
+  display: inline-block;
+  border-radius: 30px;
+}
+
+span.dot_gray {
+  width: 20px;
+  height: 20px;
+  background: #bcc5c3;
+  display: inline-block;
+  border-radius: 30px;
+}
+
+.certificates .cert_item {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #2d7a68;
+  margin: 5px 0px;
+}
+
+.certificates .cert_item span.cert_name {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #2d7a68;
+  padding-right: 5px;
+  margin-right: 7px;
+  border-right: 2px solid green;
+}
+
+.project-name {
+  color: green;
+}
+
+.project-name span {
+  color: black;
+  padding-left: 0.5%;
+  margin-left: 0.5%;
+  border-left: 1px solid green;
+}
+
+.roll {
+  font-weight: bold;
+}
+
+li {
+  max-width: 700px;
+  white-space: normal; /* Đảm bảo văn bản tự động xuống dòng tự nhiên */
+  word-break: break-word; /* Ngăn chặn chữ bị tràn ra ngoài nếu từ đó quá dài */
+  vertical-align: top;
+}
+
+/*# sourceMappingURL=mystyle.css.map */
