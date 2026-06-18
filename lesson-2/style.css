@@ -1,0 +1,29 @@
+/*selector by tag name*/
+h3 {
+  color: red;
+  background-color: black;
+  font-size: 80px;
+  text-transform: uppercase;
+}
+
+/*selector by class name*/
+.start-up {
+  color: green;
+}
+
+.study {
+  color: blue !important;
+}
+
+/*selector by id name*/
+#nguyen-van-a {
+  color: yellow;
+}
+
+#nguyen-van-b {
+  color: pink;
+}
+
+p.study {
+    text-transform: uppercase;
+}
