@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table br {
+            display: none;
+        }
+        table td {
+            max-width: 350px;
+            white-space: normal; /* Đảm bảo văn bản tự động xuống dòng tự nhiên */
+            word-break: break-word; /* Ngăn chặn chữ bị tràn ra ngoài nếu từ đó quá dài */
+            padding: 10px;
+            vertical-align: top;
+        }
+        table {
+            border-collapse: collapse; /* Gộp các đường viền của bảng */
+            width: 100%; /*Có nghĩa là chiếm toàn bộ chiều rộng của phần tử chứa nó*/
+            max-width: 800px;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+            }
+            th {
+                background-color: #f2f2f2;
+                padding: 10px;
+            }
+    </style>
+
+</head>
+<body>
+    <table border="2">
+        <thead>
+            <tr>
+                <th>
+                    Thứ tự
+                </th>
+                <th>
+                    Kỹ năng
+                </th>
+                <th>
+                    Độ thành thạo
+                </th>
+                <th>
+                    Định hướng phát triển
+                </th>
+            </tr>
+        </thead>
+        <tr>
+            <td>1</td>
+            <td>Học hỏi kiến thức</td>
+            <td> Có thể tìm hiểu các kiến thức mới nhanh chóng <br><br>,
+                nhưng đôi khi vẫn cần thời gian để hiểu sâu </td>
+            <td> Phát triển sâu hơn về hiểu một <br>
+                kiến thức theo các mức độ ....</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Học hỏi kiến thức</td>
+            <td> Có thể tìm hiểu các kiến thức mới nhanh chóng <br>,
+                nhưng đôi khi vẫn cần thời gian để hiểu sâu </td>
+            <td> Phát triển sâu hơn về hiểu một <br>
+                kiến thức theo các mức độ ....</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Học hỏi kiến thức</td>
+            <td> Có thể tìm hiểu các kiến thức mới nhanh chóng <br>,
+                nhưng đôi khi vẫn cần thời gian để hiểu sâu </td>
+            <td> Phát triển sâu hơn về hiểu một <br>
+                kiến thức theo các mức độ ....</td>
+        </tr>
+    </table>
+</body>
+</html>
