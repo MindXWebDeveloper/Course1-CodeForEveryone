@@ -1,0 +1,36 @@
+.body {
+  width: 100vw;
+  height: auto;
+}
+div.box {
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+  padding: 10px;
+  padding: 20px 30px;
+  border: 10px solid red;
+  /*border-radius: 100%;*/
+  margin-top: 20px;
+  margin-bottom: 30px;
+  position: relative;
+  /* top: 100px;
+    left: 100px; */
+}
+
+.box-1 {
+  background-color: red;
+  position: relative;
+  top: 20px;
+  left: 50px;
+}
+
+div.box-2 {
+  background-color: red;
+  /* position: absolute; */
+}
+
+.scrTop {
+  position: fixed;
+  right: 50px;
+  bottom: 100px;
+}

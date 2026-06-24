@@ -1,0 +1,144 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+.top {
+    height: 50%;
+    position: relative;
+}
+
+.bottom {
+    height: 50%;
+    background-color: black;
+}
+
+img {
+    position: absolute;
+    width: 150px;
+    border-radius: 100%;
+    right: 1%;
+}
+
+.top > img:nth-child(2) {
+    z-index: 1;
+    top: 15%;
+    width: 100px;
+}
+
+/* Nút demo */
+.open-btn{
+    padding:12px 24px;
+    border:none;
+    border-radius:10px;
+    background:#444;
+    color:#fff;
+    cursor:pointer;
+    position: absolute;
+    top: 96%;
+    left: 45%;
+}
+
+/* Modal */
+dialog{
+    width:850px;
+    max-width:90vw;
+
+    border:none;
+    border-radius:20px;
+
+    padding:40px;
+    background:#fff;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.08),
+        0 20px 60px rgba(0,0,0,.12);
+}
+
+/* nền tối phía sau */
+dialog::backdrop{
+    background:rgba(0,0,0,.25);
+}
+
+/* nút đóng */
+.close-btn{
+    position:absolute;
+    top:20px;
+    right:20px;
+
+    width:46px;
+    height:46px;
+
+    border:none;
+    border-radius:50%;
+
+    background:#f1f1f1;
+    color:#666;
+
+    font-size:32px;
+    cursor:pointer;
+}
+
+/* ảnh placeholder */
+.banner{
+    width:100%;
+    height:280px;
+
+    background:#e8e8e8;
+    border-radius:20px;
+
+    margin-bottom:40px;
+}
+
+.content{
+    text-align:center;
+}
+
+.content h2{
+    font-size:52px;
+    color:#555;
+    margin-bottom:12px;
+}
+
+.content p{
+    color:#9a9a9a;
+    font-size:28px;
+    margin-bottom:40px;
+}
+
+.content input{
+    width:90%;
+    height:72px;
+
+    border:2px solid #e5e5e5;
+    border-radius:14px;
+
+    padding:0 24px;
+    font-size:22px;
+
+    outline:none;
+}
+
+.content input:focus{
+    border-color:#999;
+}
+
+.submit-btn{
+    width:100%;
+    height:80px;
+
+    margin-top:24px;
+
+    border:none;
+    border-radius:14px;
+
+    background:#555;
+    color:white;
+
+    font-size:28px;
+    font-weight:600;
+
+    cursor:pointer;
+}
