@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luong Van Thanh - 01</title>
+    <link rel="stylesheet" href="./style01.css" />
+  </head>
+  <body>
+    <div class="top">
+      <img src="./1782050598643_4365862061107505429_g826468634094252283_cf19b622aab0b2e777792cfc63c979e2.jpg">
+      <img src="./1782050598644_4365862061107505429_g826468634094252283_428a6fa2a31460db65480c875c307c75.jpg">
+
+      <button class="open-btn" onclick="feedbackModal.showModal()">
+        Open Feedback
+    </button>
+
+    <dialog id="feedbackModal">
+
+        <button
+            class="close-btn"
+            onclick="feedbackModal.close()">
+            ×
+        </button>
+
+        <div class="banner"></div>
+
+        <div class="content">
+            <h2>Send feedback!</h2>
+            <p>Leave your feedback here.</p>
+
+            <input
+                type="text"
+                placeholder="Type text..."
+            >
+
+            <button class="submit-btn">
+                Yeah, thanks!
+            </button>
+        </div>
+
+    </dialog>
+    </div>
+    <div class="bottom"></div>
+  </body>
+</html>
